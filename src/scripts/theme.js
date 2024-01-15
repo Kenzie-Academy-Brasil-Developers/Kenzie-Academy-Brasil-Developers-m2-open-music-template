@@ -1,5 +1,6 @@
 /* Desenvolva sua lógica aqui ... */
-function darkMode() {
+
+export const darkMode = () => {
   const button = document.querySelector(".header__btn");
   const root = document.querySelector("html");
   const storage = localStorage.getItem("darkmode");
@@ -16,6 +17,4 @@ function darkMode() {
       localStorage.setItem("darkmode", "false");
     }
   });
-}
-
-darkMode();
+};
